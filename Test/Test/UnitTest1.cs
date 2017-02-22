@@ -3,11 +3,12 @@ using NUnit.Framework;
 
 namespace Test
 {
+    [TestFixture]
     public class UnitTest1
     {
         private Random _rand;
         
-        [SetUp]
+        [TestFixtureSetUp]
         public void Setup()
         {
             _rand = new Random();    
